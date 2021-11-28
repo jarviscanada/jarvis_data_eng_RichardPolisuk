@@ -10,12 +10,12 @@ CREATE TABLE IF NOT EXISTS PUBLIC.host_info
     cpu_mhz          REAL     NOT NULL,
     L2_cache         INTEGER  NOT NULL,
     total_mem        REAL     NOT NULL,
-    timestamp        TIMESTAMP DEFAULT NOW()
+    timestamp        TIMESTAMP DEFAULT CURRENT_TIMESTAMP(0)
 );
 
 CREATE TABLE IF NOT EXISTS PUBLIC.host_usage
 (
-    timestamp      TIMESTAMP DEFAULT NOW(),
+    timestamp      TIMESTAMP DEFAULT CURRENT_TIMESTAMP(0),
     host_id        INTEGER PRIMARY KEY REFERENCES PUBLIC.host_info (id),
     memory_free    INTEGER NOT NULL,
     cpu_idle       INTEGER NOT NULL,
