@@ -15,7 +15,7 @@ then
     exit 1
 fi
 
-lscpu_out=`lscpu`
+lscpu_out=$(lscpu)
 
 # Get hardware information
 hostname=$(hostname -f)
