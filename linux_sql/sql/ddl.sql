@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS PUBLIC.host_info
 CREATE TABLE IF NOT EXISTS PUBLIC.host_usage
 (
     timestamp      TIMESTAMP DEFAULT CURRENT_TIMESTAMP(0),
-    host_id        INTEGER PRIMARY KEY REFERENCES PUBLIC.host_info (id),
+    host_id        INTEGER REFERENCES PUBLIC.host_info (id),
     memory_free    INTEGER NOT NULL,
     cpu_idle       INTEGER NOT NULL,
     cpu_kernel     INTEGER NOT NULL,
