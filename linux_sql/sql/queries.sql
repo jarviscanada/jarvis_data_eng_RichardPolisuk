@@ -1,4 +1,7 @@
 -- you can also create a function for convenience purposes so your qeury looks cleaner
+-- Drop if exists so we can cleanly re-create it
+DROP FUNCTION IF EXISTS round5(TIMESTAMP);
+
 CREATE FUNCTION round5(ts timestamp) RETURNS timestamp AS
 $$
 BEGIN
@@ -11,7 +14,7 @@ $$
 SELECT
     cpu_number || ',' || id || ',' || TRIM( BOTH FROM to_char(total_mem / 1024, '99999999'))
 FROM
-    PUBLIC.host_info
+    host_info
 ORDER BY
     cpu_number,
     total_mem DESC;
@@ -23,8 +26,10 @@ SELECT
 	round5(hu.timestamp) || ',' ||
 	AVG((((hi.total_mem::float)/1000 - hu.memory_free::float) / (hi.total_mem::float/1000)) * 100):: int
 FROM
-     host_usage hu
-     INNER JOIN host_info hi ON hu.host_id = hi.id
+    host_usage hu,
+    host_info hi
+WHERE
+    hu.host_id = hi.id
 GROUP BY
     round5(hu.timestamp),
     hu.host_id,
