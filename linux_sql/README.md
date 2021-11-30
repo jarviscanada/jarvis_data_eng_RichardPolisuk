@@ -7,13 +7,13 @@ This project provides a monitoring solution for the LCA team to be able to monit
 servers. Custom Linux agents run on each node of the Linux cluster running CentOS 7 and will record hardware
 specifications of the servers and will collect CPU/memory resource usage every minute. This information will be added
 and stored in a central Postgres database running on a dedicated server. The LCA team will generate reports using this
-data by the LCA team to help monitor and support the cluster.
+data which will help monitor and support the cluster.
 
 The technologies used in this project are:
 
 - bash scripts (used to gather the hardware specifications, resource usage, and manage docker)
 - Postgres v9.6 database (stores the collected data)
-- psql v9.2 (used to administer the Postgres database)
+- psql v9.2 (Postgres client program used to administer the Postgres database)
 - git v2.30.1 (version control software)
 - Docker v20.10.11 (container running the Postgres database)
 - IntelliJ IDEA v2021.2.3 (used as the IDE to edit files)
@@ -61,7 +61,7 @@ command should be executed once and before the host_usage script is executed. It
 initialize the server for the Postgres database.
 
 ```
-    ./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password
+host_info.sh psql_host psql_port db_name psql_user psql_password
 ```
 
 where psql_host is the Postgres host running the database, psq_port is the port the Postgres server is listening on,
@@ -73,7 +73,7 @@ database, and psql_password is the Postgres password used when creating the data
 The following command will insert the server usage data into the Postgres database. N
 
 ```
-    ./scripts/host_info.sh psql_host psql_port psql_name psql_user psql_password
+host_info.sh psql_host psql_port psql_name psql_user psql_password
 ```
 
 where psql_host is the Postgres host running the database, psq_port is the port the Postgres server is listening on,
@@ -93,6 +93,9 @@ crontab -e
 ```
 
 # Implementation
+
+The following describes how the project was implemented including the architecture, scripts used, and database
+modelling.
 
 ## Architecture
 
@@ -145,7 +148,7 @@ Postgres database.
 The following command will insert the hardware specifications data into the Postgres database.
 
 ```
-    ./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password
+host_info.sh psql_host psql_port db_name psql_user psql_password
 ```
 
 where psql_host is the Postgres host running the database, psq_port is the port the Postgres server is listening on,
@@ -165,7 +168,7 @@ ensure the Postgres database is set up correctly.
 The following command will insert the server usage data into the Postgres database.
 
 ```
-    ./scripts/host_info.sh psql_host psql_port psql_name psql_user psql_password
+host_info.sh psql_host psql_port psql_name psql_user psql_password
 ```
 
 where psql_host is the Postgres host running the database, psq_port is the port the Postgres server is listening on,
@@ -260,12 +263,13 @@ Linux server. The Postgres docker was created and used as the database.
 
 Some improvements for this project include:
 
-- The current scripts do not do any error checking if the data is not able to be added to the database. This can be if
-  there is an error or if the database is down for any reason. A solution will need to be designed to store the
-  information locally when the database is not able to receive the script information.
+- The current scripts do not perform any error checking if the data is not able to be added to the database. This can be
+  if there is an error or if the database is down for any reason. A solution will need to be designed to store the
+  information locally when the database is not able to receive the script information and later add it to the database.
 
-- The current script does not allow the host information to be updated if any change occurs such as hardware changes or
-  virtual machine changes. The script needs to be updated to replace the existing information with the new information.
+- The current host_info script does not allow the host information to be updated if any change occurs such as hardware
+  changes or virtual machine changes. The script needs to be updated to replace the existing information with the new
+  information.
 
 - The current solution stores the information forever. There needs to be a mechanism to archive and delete older
   information from the database.
