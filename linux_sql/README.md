@@ -1,8 +1,5 @@
 # Linux Cluster Monitoring Agent
 
-This project is under development. Since this project follows the GitFlow, the final work will be merged into the master
-branch after Team Code Team.
-
 # Introduction
 
 The Jarvis Linux Cluster Administration (LCA) runs a Linux cluster of Linux servers that are used by Jarvis consultants.
@@ -219,10 +216,32 @@ This table stores the host hardware information per Linux server. A unique seria
 is loaded which is then used to add the Linux server usage information to the database. This table contains information
 about the CPU (number, architecture, model, speed, cache) as well as the total amount of memory in the system.
 
+Column | Type | Description
+--------------|------|--------------
+id | `SERIAL` | This unique identifier is automatically generate when inserted into the database. This column is the primary key.
+hostname | `VARCHAR` | Contains the name of the Linux server
+cpu_number | `SMALLINT` | Contains the number of CPUs in the server
+cpu_architecture | `VARCHAR` | Contains the architecture of the CPU in the server.
+cpu_model | `VARCHAR` | Contains the model of the CPU in the server.
+cpu_mhz | `REAL` | Contains the clock speed of the CPU in the server.
+L2_cache | `INTEGER` | Contains the size of the L2 cache in the CPU in the server.
+total_mem | `REAL` | Contains the total memory installed in the server.
+timestamp | `TIMESTAMP` | Timestamp of when data is added to the database. Default is the current timestamp of the server.
+
 ### host_usage
 
 This table stores the host usage information. The host id is used to determine which server it came from. The table
 contains information about the memory free in the system, the CPU used information, disk IO, and disk available.
+
+Column | Type | Description
+--------------|------|--------------
+timestamp | `TIMESTAMP` | Timestamp of when data is added to the database. Default is the current timestamp of the server.
+host_id | `INTEGER` | Contains the id of the host where the usage data was gathered from. This is a foreign key of the id from the host_info table.
+memory_free | `INTEGER` | Contains the amount of memory free.
+cpu_idle | `INTEGER` | Contains the percentage of the CPU that is idle (i.e. not being used).
+cpu_kernel | ` INTEGER ` | Contains the percentage of CPU usage for the kernel that is being used.
+disk_io | `INTEGER` | Contains the amount of disk I/O currently being used.
+disk_available | `INTEGER` | Contains the available disk space of the root directory for the server.
 
 # Test
 
