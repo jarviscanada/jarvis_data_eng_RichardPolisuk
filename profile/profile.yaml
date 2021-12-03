@@ -1,0 +1,138 @@
+# Preferred name (Characters only)
+name: "Richard Polisuk"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_RichardPolisuk
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: Experienced Information Technology professional with System and Infrastructure experience currently pursuing software engineering opportunities. Processional experience with IBM Canada, CIBC, and TELUS. Academic experience from McGill University and Seneca College.
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - JavaScript
+    - C#
+    - Public Cloud (AWS, Azure, GCP)
+    - Networking (Load Balancing, Firewalls)
+  # At least 5 skills
+  competent:
+    - RDBMS/SQL
+    - Agile/Scrum
+    - Git
+    - Docker
+    - Angular
+    - Node.js/Express.js
+    - DevOps toosl (Datadog, OpsGenie, Confluence, Bitbucket, Splunk)
+  # At least 5 skills
+  familiar:
+    - MongoDB
+    - React
+    - Mobile (Android, IOS, Xamarin, Flutter)
+    - Load Balancing
+    - HP ProLiant hardware
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Programmed custom a client/server monitoring tool using Bash scripts, Docker containers, Postgres database, and SQL.
+#  - name: "Core Java Apps"
+#    git_url: "/core_java"
+#    description:
+#      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+#      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+#      - "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+#  - name: "Springboot App"
+#    git_url: "/springboot"
+#    description: ""
+#  - name: "Python Data Analytics"
+#    git_url: "/python_data_anlytics"
+#    description: ""
+#  - name: "Hadoop"
+#    git_url: "/hadoop"
+#    description: ""
+#  - name: "Spark"
+#    git_url: "/spark"
+#    description: ""
+#  - name: "Cloud/DevOps"
+#    git_url: "/cloud_devops"
+#    description: ""
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "Donor's Choice"
+    description: Worked on a Seneca College project which create node.js API services to a MongoDB database.
+    #URL is optional
+#    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+#    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+#  - name: "Machine Learning"
+#    git_url:
+#    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Software Developer"
+    company: "Jarvis"
+    duration: "2021-present"
+    description: "Developed a Bash script monitoring system with a Postgres database."
+  - title: "Senior Design Specialist"
+    company: "TELUS Health"
+    duration: "2017-2019"
+    description: "Administered TELUS Health Cloud Operations team health applications running in Amazon Web Services (AWS) using Zendesk, OpsGenie, Atlassian suite (Confluence, JIRA, Bitbucket), Datadog, Slack, Splunk, and Python scripting."
+  - title: "Senior IT Architect"
+    company: "Emergis (after 2008, TELUS)"
+    duration: "2006-2017"
+    description: "Worked with solution architects to understand their application requirements and translate it into documentation used by the operations staff to build out the appropriate environments. Documentation contains the network, system, and application information needed to implement the solution. Supported the development and quality assurance networks that contain all the development/QA servers. Involved in the design and installation of the network containing multi-layer switches, load balancers, firewalls, routers, and network monitoring."
+  - title: "Senior Infrastructure Architect"
+    company: "BCE Emergis (then Emergis)"
+    duration: "2001-2006"
+    description: "Involved in the architecture, implementation and support of technology infrastructures needed to support Emergis' e-commerce products, services and solutions. Design and architect the network, system, and storage infrastructure, including production, test, disaster recovery and corporate environments. This includes adding new applications to the existing infrastructure and ensuring the network and security is correctly designed for these solutions."
+  - title: "Chief Architect, CIBC VeriSign"
+    company: "CIBC"
+    duration: "2000-2001"
+    description: "Responsible for establishing the standard hardware configurations, obtaining price quotes from vendors and purchasing equipment; defining the network components required for various applications (routers, firewalls, etc.); selecting and configuring web and application servers; sizing network and hardware components required for specific applications; determining the load balancing, scalability and availability requirements of an application."
+  - title: "Advisory Systems Developer"
+    company: "CIBC"
+    duration: "1998-2001"
+    description: "Worked with the development team to ensure the application infrastructure was correctly sized and configured. Provided support for the operations team concerning the application and required infrastructure."
+  - title: "Internet Specialist"
+    company: "IBM Canada"
+    duration: "1989-1998"
+    description: "Implemented the technical infrastructure for President’s Choice Financial. Designed, set up and coordinated RS/6000 SP infrastructure. Coordinated team of CIBC, INTRIA-HP and IBM resources. Coded a component of the Client/Server SEDAR application for the Canadian Depository for Securities in C and Microsoft Visual Basic. Designed and coded internal Mainframe applications for IBM Canada in REXX and ISPF for VM."
+
+#List of education
+education: 
+  - school_name: "Seneca College"
+    duration: "2019-2021"
+    degree: "Ontario College Advanced Diploma"
+    department: "Computer Programming and Analysis"
+    # optional
+    awards_achievements: 
+      - "High Honours"
+      - "President's Honour List (Fall 2019, Winter 2020, Summer 2020, Fall 2020, Winter 2021, Summer 2021)"
+      - "GPA: 4.0/4.0"
+  - school_name: "McGill University"
+    duration: "1986-1989"
+    degree: "Bachelor of Commerce"
+    department: "Major, Management Information System"
+    awards_achievements:
+      - "Distinction"
+      - "GPA: 3.42/4.0"
+
+#Optional section
+others:
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Walking"
+      - "Reading"

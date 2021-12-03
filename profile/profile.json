@@ -1,0 +1,119 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "High Honours",
+        "President's Honour List (Fall 2019, Winter 2020, Summer 2020, Fall 2020, Winter 2021, Summer 2021)",
+        "GPA: 4.0/4.0"
+      ],
+      "degree": "Ontario College Advanced Diploma",
+      "department": "Computer Programming and Analysis",
+      "duration": "2019-2021",
+      "school_name": "Seneca College"
+    },
+    {
+      "awards_achievements": [
+        "Distinction",
+        "GPA: 3.42/4.0"
+      ],
+      "degree": "Bachelor of Commerce",
+      "department": "Major, Management Information System",
+      "duration": "1986-1989",
+      "school_name": "McGill University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_RichardPolisuk",
+  "highlighted_projects": [
+    {
+      "description": "Worked on a Seneca College project which create node.js API services to a MongoDB database.",
+      "name": "Donor's Choice"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Programmed custom a client/server monitoring tool using Bash scripts, Docker containers, Postgres database, and SQL.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    }
+  ],
+  "name": "Richard Polisuk",
+  "others": [
+    {
+      "bullets": [
+        "Walking",
+        "Reading"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Developed a Bash script monitoring system with a Postgres database.",
+      "duration": "2021-present",
+      "title": "Software Developer"
+    },
+    {
+      "company": "TELUS Health",
+      "description": "Administered TELUS Health Cloud Operations team health applications running in Amazon Web Services (AWS) using Zendesk, OpsGenie, Atlassian suite (Confluence, JIRA, Bitbucket), Datadog, Slack, Splunk, and Python scripting.",
+      "duration": "2017-2019",
+      "title": "Senior Design Specialist"
+    },
+    {
+      "company": "Emergis (after 2008, TELUS)",
+      "description": "Worked with solution architects to understand their application requirements and translate it into documentation used by the operations staff to build out the appropriate environments. Documentation contains the network, system, and application information needed to implement the solution. Supported the development and quality assurance networks that contain all the development/QA servers. Involved in the design and installation of the network containing multi-layer switches, load balancers, firewalls, routers, and network monitoring.",
+      "duration": "2006-2017",
+      "title": "Senior IT Architect"
+    },
+    {
+      "company": "BCE Emergis (then Emergis)",
+      "description": "Involved in the architecture, implementation and support of technology infrastructures needed to support Emergis' e-commerce products, services and solutions. Design and architect the network, system, and storage infrastructure, including production, test, disaster recovery and corporate environments. This includes adding new applications to the existing infrastructure and ensuring the network and security is correctly designed for these solutions.",
+      "duration": "2001-2006",
+      "title": "Senior Infrastructure Architect"
+    },
+    {
+      "company": "CIBC",
+      "description": "Responsible for establishing the standard hardware configurations, obtaining price quotes from vendors and purchasing equipment; defining the network components required for various applications (routers, firewalls, etc.); selecting and configuring web and application servers; sizing network and hardware components required for specific applications; determining the load balancing, scalability and availability requirements of an application.",
+      "duration": "2000-2001",
+      "title": "Chief Architect, CIBC VeriSign"
+    },
+    {
+      "company": "CIBC",
+      "description": "Worked with the development team to ensure the application infrastructure was correctly sized and configured. Provided support for the operations team concerning the application and required infrastructure.",
+      "duration": "1998-2001",
+      "title": "Advisory Systems Developer"
+    },
+    {
+      "company": "IBM Canada",
+      "description": "Implemented the technical infrastructure for President’s Choice Financial. Designed, set up and coordinated RS/6000 SP infrastructure. Coordinated team of CIBC, INTRIA-HP and IBM resources. Coded a component of the Client/Server SEDAR application for the Canadian Depository for Securities in C and Microsoft Visual Basic. Designed and coded internal Mainframe applications for IBM Canada in REXX and ISPF for VM.",
+      "duration": "1989-1998",
+      "title": "Internet Specialist"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git",
+      "Docker",
+      "Angular",
+      "Node.js/Express.js",
+      "DevOps toosl (Datadog, OpsGenie, Confluence, Bitbucket, Splunk)"
+    ],
+    "familiar": [
+      "MongoDB",
+      "React",
+      "Mobile (Android, IOS, Xamarin, Flutter)",
+      "Load Balancing",
+      "HP ProLiant hardware"
+    ],
+    "proficient": [
+      "Java",
+      "JavaScript",
+      "C#",
+      "Public Cloud (AWS, Azure, GCP)",
+      "Networking (Load Balancing, Firewalls)"
+    ]
+  },
+  "summary": "Experienced Information Technology professional with System and Infrastructure experience currently pursuing software engineering opportunities. Processional experience with IBM Canada, CIBC, and TELUS. Academic experience from McGill University and Seneca College."
+}
