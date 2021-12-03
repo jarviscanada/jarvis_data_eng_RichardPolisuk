@@ -1,8 +1,4 @@
--- you can also create a function for convenience purposes so your qeury looks cleaner
--- Drop if exists so we can cleanly re-create it
-DROP FUNCTION IF EXISTS round5(TIMESTAMP);
-
-CREATE FUNCTION round5(ts timestamp) RETURNS timestamp AS
+CREATE OR REPLACE FUNCTION round5(ts timestamp) RETURNS timestamp AS
 $$
 BEGIN
     RETURN date_trunc('hour', ts) + date_part('minute', ts):: int / 5 * interval '5 min';
@@ -12,7 +8,9 @@ $$
 
 -- Query 1
 SELECT
-    cpu_number || ',' || id || ',' || TRIM( BOTH FROM to_char(total_mem / 1024, '99999999'))
+    cpu_number,
+    id,
+    TRIM(BOTH FROM to_char(total_mem / 1024, '99999999'))
 FROM
     host_info
 ORDER BY
@@ -21,10 +19,10 @@ ORDER BY
 
 -- Query 2
 SELECT
-	hu.host_id || ',' ||
-	hi.hostname || ',' ||
-	round5(hu.timestamp) || ',' ||
-	AVG((((hi.total_mem::float)/1000 - hu.memory_free::float) / (hi.total_mem::float/1000)) * 100):: int
+	hu.host_id,
+    hi.hostname,
+  	round5(hu.timestamp),
+  	AVG((((hi.total_mem::float)/1000 - hu.memory_free::float) / (hi.total_mem::float/1000)) * 100):: int
 FROM
     host_usage hu,
     host_info hi

@@ -22,67 +22,43 @@ The technologies used in this project are:
 
 # Quick Start
 
-The following are the quick start commands/files needed to manage this system.
-
-## psql_docker.sh
-
-The following command will create the Postgres container.
+- Create the Postgres container:
 
 ```
 psql_docker.sh create psql_username psql_password
 ```
 
-where psql_username is the Postgres username and psql_password is the Postgres password.
-
-The following command will start the Postgres container.
+- Start the Postgres container:
 
 ```
 psql_docker.sh start
 ```
 
-The following command will stop the Postgres container.
+- Stop the Postgres container:
 
 ```
 psql_docker.sh stop
 ```
 
-## ddl.sql
-
-The following command will create the Postgres schema required for this project.
+- Create the Postgres schema:
 
 ````
 psql -h localhost -U postgres -d host_agent -f ddl.sql    
 ````
 
-## host_info.sh
-
-The following command will insert the hardware specifications data into the Postgres database (host_agent). Note: This
-command should be executed once and before the host_usage script is executed. It will add the required information to
-initialize the server for the Postgres database.
+- Insert the hardware specifications data into the database:
 
 ```
 host_info.sh psql_host psql_port db_name psql_user psql_password
 ```
 
-where psql_host is the Postgres host running the database, psq_port is the port the Postgres server is listening on,
-db_name is the database name (host_agent is the default), psql_user is the Postgres username used when creating the
-database, and psql_password is the Postgres password used when creating the database.
-
-## host_usage.sh
-
-The following command will insert the server usage data into the Postgres database. N
+- Insert the server usage data into the database:
 
 ```
 host_info.sh psql_host psql_port psql_name psql_user psql_password
 ```
 
-where psql_host is the Postgres host running the database, psq_port is the port the Postgres server is listening on,
-psql_name is the database name (host_agent is the default), psql_user is the Postgres username used when creating the
-database, and psql_password is the Postgres password used when creating the database.
-
-## Crontab setup
-
-The following steps are used to configure the Linux server's CRON program to execute the script.
+- Configure the Linux server's CRON program to execute the script:
 
 ```
 # edit crontab file
