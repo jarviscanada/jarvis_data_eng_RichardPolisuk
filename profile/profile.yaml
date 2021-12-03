@@ -5,7 +5,7 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_RichardPol
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: Experienced Information Technology professional with System and Infrastructure experience currently pursuing software engineering opportunities. Processional experience with IBM Canada, CIBC, and TELUS. Academic experience from McGill University and Seneca College.
+summary: Experienced Information Technology professional with system and infrastructure architecture experience currently pursuing software engineering opportunities. Professional experience with IBM Canada, CIBC, and TELUS. Academic experience from McGill University and Seneca College.
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -25,13 +25,13 @@ skills:
     - Docker
     - Angular
     - Node.js/Express.js
-    - DevOps toosl (Datadog, OpsGenie, Confluence, Bitbucket, Splunk)
+    - DevOps tools (Datadog, OpsGenie, Confluence, Bitbucket, Splunk)
   # At least 5 skills
   familiar:
     - MongoDB
     - React
-    - Mobile (Android, IOS, Xamarin, Flutter)
-    - Load Balancing
+    - Big Data (Hadoop, Spark, Python, R)
+    - Mobile (Android/Java, IOS/Swift, Xamarin, Flutter)
     - HP ProLiant hardware
 
 # List of Jarvis projects
@@ -40,7 +40,7 @@ jarvis_projects:
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Programmed custom a client/server monitoring tool using Bash scripts, Docker containers, Postgres database, and SQL.
+    description: Programmed a client/server monitoring tool using Bash scripts, Docker containers, Postgres database, and SQL queries.
 #  - name: "Core Java Apps"
 #    git_url: "/core_java"
 #    description:
@@ -68,7 +68,8 @@ jarvis_projects:
 highlighted_projects:
     #project name
   - name: "Donor's Choice"
-    description: Worked on a Seneca College project which create node.js API services to a MongoDB database.
+    git_url: "https://github.com/rpolisuk/donors-choice/tree/DonorsChoiceAPI"
+    description: Seneca College final project which allowed consumers to donate their clothes to any charity of their choice. Configured the MongoDB environment and loaded the charity information. Developed the required APIs to allow pickups, donations, and authentication using node.js and Express.js.
     #URL is optional
 #    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
@@ -91,7 +92,7 @@ professional_experience:
     duration: "2017-2019"
     description: "Administered TELUS Health Cloud Operations team health applications running in Amazon Web Services (AWS) using Zendesk, OpsGenie, Atlassian suite (Confluence, JIRA, Bitbucket), Datadog, Slack, Splunk, and Python scripting."
   - title: "Senior IT Architect"
-    company: "Emergis (after 2008, TELUS)"
+    company: "Emergis (after 2008, TELUS Health)"
     duration: "2006-2017"
     description: "Worked with solution architects to understand their application requirements and translate it into documentation used by the operations staff to build out the appropriate environments. Documentation contains the network, system, and application information needed to implement the solution. Supported the development and quality assurance networks that contain all the development/QA servers. Involved in the design and installation of the network containing multi-layer switches, load balancers, firewalls, routers, and network monitoring."
   - title: "Senior Infrastructure Architect"
@@ -104,7 +105,7 @@ professional_experience:
     description: "Responsible for establishing the standard hardware configurations, obtaining price quotes from vendors and purchasing equipment; defining the network components required for various applications (routers, firewalls, etc.); selecting and configuring web and application servers; sizing network and hardware components required for specific applications; determining the load balancing, scalability and availability requirements of an application."
   - title: "Advisory Systems Developer"
     company: "CIBC"
-    duration: "1998-2001"
+    duration: "1998-2000"
     description: "Worked with the development team to ensure the application infrastructure was correctly sized and configured. Provided support for the operations team concerning the application and required infrastructure."
   - title: "Internet Specialist"
     company: "IBM Canada"

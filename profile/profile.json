@@ -25,13 +25,14 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_RichardPolisuk",
   "highlighted_projects": [
     {
-      "description": "Worked on a Seneca College project which create node.js API services to a MongoDB database.",
+      "description": "Seneca College final project which allowed consumers to donate their clothes to any charity of their choice. Configured the MongoDB environment and loaded the charity information. Developed the required APIs to allow pickups, donations, and authentication using node.js and Express.js.",
+      "git_url": "https://github.com/rpolisuk/donors-choice/tree/DonorsChoiceAPI",
       "name": "Donor's Choice"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "Programmed custom a client/server monitoring tool using Bash scripts, Docker containers, Postgres database, and SQL.",
+      "description": "Programmed a client/server monitoring tool using Bash scripts, Docker containers, Postgres database, and SQL queries.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     }
@@ -60,7 +61,7 @@
       "title": "Senior Design Specialist"
     },
     {
-      "company": "Emergis (after 2008, TELUS)",
+      "company": "Emergis (after 2008, TELUS Health)",
       "description": "Worked with solution architects to understand their application requirements and translate it into documentation used by the operations staff to build out the appropriate environments. Documentation contains the network, system, and application information needed to implement the solution. Supported the development and quality assurance networks that contain all the development/QA servers. Involved in the design and installation of the network containing multi-layer switches, load balancers, firewalls, routers, and network monitoring.",
       "duration": "2006-2017",
       "title": "Senior IT Architect"
@@ -80,7 +81,7 @@
     {
       "company": "CIBC",
       "description": "Worked with the development team to ensure the application infrastructure was correctly sized and configured. Provided support for the operations team concerning the application and required infrastructure.",
-      "duration": "1998-2001",
+      "duration": "1998-2000",
       "title": "Advisory Systems Developer"
     },
     {
@@ -98,13 +99,13 @@
       "Docker",
       "Angular",
       "Node.js/Express.js",
-      "DevOps toosl (Datadog, OpsGenie, Confluence, Bitbucket, Splunk)"
+      "DevOps tools (Datadog, OpsGenie, Confluence, Bitbucket, Splunk)"
     ],
     "familiar": [
       "MongoDB",
       "React",
-      "Mobile (Android, IOS, Xamarin, Flutter)",
-      "Load Balancing",
+      "Big Data (Hadoop, Spark, Python, R)",
+      "Mobile (Android/Java, IOS/Swift, Xamarin, Flutter)",
       "HP ProLiant hardware"
     ],
     "proficient": [
@@ -115,5 +116,5 @@
       "Networking (Load Balancing, Firewalls)"
     ]
   },
-  "summary": "Experienced Information Technology professional with System and Infrastructure experience currently pursuing software engineering opportunities. Processional experience with IBM Canada, CIBC, and TELUS. Academic experience from McGill University and Seneca College."
+  "summary": "Experienced Information Technology professional with system and infrastructure architecture experience currently pursuing software engineering opportunities. Professional experience with IBM Canada, CIBC, and TELUS. Academic experience from McGill University and Seneca College."
 }
