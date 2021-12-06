@@ -11,7 +11,7 @@ public interface JavaGrep {
    *
    * @throws IOException
    */
-  void process() throws IOException, IllegalAccessException;
+  void process() throws IOException;
 
   /**
    * Traverse a given directory and return all files
@@ -30,7 +30,7 @@ public interface JavaGrep {
    * @return lines
    * @throws IllegalAccessException if a given inputFile is not a file
    */
-  List<String> readLines(File inputFile) throws IllegalAccessException;
+  List<String> readLines(File inputFile);
 
   /**
    * check if a line contains the regex pattern (passed by user)

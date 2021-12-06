@@ -23,20 +23,20 @@ public class JavaGrepImp implements JavaGrep {
   private String rootPath;
   private String outFile;
 
-
   public static void main(String[] args) throws IllegalAccessException {
     if (args.length != 3) {
       throw new IllegalAccessException("USAGE: JavaGrep regex rootPath outFile");
     }
 
-    // Use default logger config
-    BasicConfigurator.configure();
+    BasicConfigurator.configure(); // Use default logger config
 
     JavaGrepImp javaGrepImp = new JavaGrepImp();
 
-    javaGrepImp.logger.info(
+    // Display the arguments
+    javaGrepImp.logger.debug(
         "Command arguments: " + args[0] + " " + args[1] + " " + args[2]);
 
+    // Store the arguments
     javaGrepImp.setRegex(args[0]);
     javaGrepImp.setRootPath(args[1]);
     javaGrepImp.setOutFile(args[2]);
@@ -46,48 +46,39 @@ public class JavaGrepImp implements JavaGrep {
     } catch (Exception ex) {
       javaGrepImp.logger.error("Error: Unable to process ", ex);
     }
-
   }
 
   /**
    * Top level search workflow
-   *
-   * @throws IOException
+   * @throws IOException Illegal IO exception
    */
   @Override
-  public void process() throws IOException, IllegalAccessException {
+  public void process() throws IOException {
 
-    //@formatter:off
-    // matchedLines = []
-    // for file in listFilesRecursively(rootDir)
-    //   for line in readLines(file)
-    //     if containsPattern(line)
-    //       matchedLines.add(line)
-    // writeToFile(matchedLines)
-    //@formatter:on
-    // listFiles(this.getRootPath());
-
-    List<File> files = listFiles("/Users/rpolisuk/dev/core_java/grep/data/txt/poe.txt");
-    List<String> lines; // Initialize the return list
+    List<File> files = listFiles(this.rootPath);
+    List<String> lines;
     List<String> matchedLines = new ArrayList<>();
 
     if (files != null) { // Process the files as long as there some to process
       for (File file : files) {
         lines = this.readLines(file);
-        if (lines != null) {
+        if (lines != null) { // Process the lines as long as they were read
           for (String line : lines) {
-            if (this.containsPattern(line)) {
-              System.out.println(line);
+            if (this.containsPattern(line)) { // Save the matches
               matchedLines.add(line);
             }
           }
         }
       }
-      if (matchedLines.size() > 0) {
-        this.writeToFile(matchedLines);
+      if (matchedLines.size() > 0) { // If there are any matches, save to file
+        try {
+          this.writeToFile(matchedLines);
+        } catch (Exception e) {
+          throw new IOException("Unable to write file to disk.");
+        }
       }
     } else {
-      logger.error("No files found.");
+      logger.error("No matches found.");
     }
   }
 
@@ -120,13 +111,11 @@ public class JavaGrepImp implements JavaGrep {
    *
    * @param inputFile file to be read
    * @return lines
-   * @throws IllegalAccessException if a given inputFile is not a file
    */
   @Override
-  public List<String> readLines(File inputFile) throws IllegalAccessException {
+  public List<String> readLines(File inputFile) {
 
     BufferedReader reader = null;
-    // StringBuilder content = new StringBuilder();
     String line;
     List<String> lines = new ArrayList<>(); // Initialize the return list
 
@@ -164,7 +153,7 @@ public class JavaGrepImp implements JavaGrep {
 
   /**
    * Write lines to a file
-   * <p>
+   *
    * Explore: FileOutputStream, OutputStreamWriter, and BufferedWriter
    *
    * @param lines matched line
@@ -179,34 +168,58 @@ public class JavaGrepImp implements JavaGrep {
       outStream.newLine();
     }
     outStream.close();
-    System.out.println("Data saved.");
+    logger.debug("File successfully written to disk.");
   }
 
+  /**
+   * Gets root path
+   * @return Root path
+   */
   @Override
   public String getRootPath() {
     return this.rootPath;
   }
 
+  /**
+   * Sets root path
+   * @param rootPath Root path
+   */
   @Override
   public void setRootPath(String rootPath) {
     this.rootPath = rootPath;
   }
 
+  /**
+   * Getter
+   * @return Regular expression
+   */
   @Override
   public String getRegex() {
     return this.regex;
   }
 
+  /**
+   * Sets RegEx expression
+   * @param regex Regular expression
+   */
   @Override
   public void setRegex(String regex) {
     this.regex = regex;
   }
 
+  /**
+   * Gets output file name
+   * @return output file
+   */
   @Override
   public String getOutFile() {
     return this.outFile;
   }
 
+  /**
+   * Sets output file name
+   * @param outFile Output file
+   */
   @Override
   public void setOutFile(String outFile) {
     this.outFile = outFile;
