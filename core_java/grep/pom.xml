@@ -35,6 +35,7 @@
           <!-- Run shade goal on package phase -->
           <execution>
             <configuration>
+              <dependencyReducedPomLocation>${project.build.directory}/dependency-reduced-pom.xml</dependencyReducedPomLocation>
               <transformers>
                 <!-- add Main-Class to manifest file -->
                 <transformer
