@@ -4,15 +4,15 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-class Practice implements RegexExc {
+class RegexExcMain implements RegexExc {
 
   // Your program begins with a call to main().
   // Prints "Hello, World" to the terminal window.
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     // boolean result = new Practice().matchJpeg("jpg");
-    System.out.println(new Practice().matchJpeg("a.jpg"));
-    System.out.println(new Practice().matchIp("10.10.10.10"));
-    System.out.println(new Practice().isEmptyLine(" r"));
+    System.out.println(new RegexExcMain().matchJpeg("a.jpg"));
+    System.out.println(new RegexExcMain().matchIp("10.10.10.10"));
+    System.out.println(new RegexExcMain().isEmptyLine(" r"));
   }
 
   // return true if filename extension is jpg or jpeg (case-insensitive)
