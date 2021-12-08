@@ -34,7 +34,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
 
   /**
    * Read a file and return all the lines
-   *
+   * <p>
    * Explain FileReader, BufferedReader, and character encoding
    *
    * @param inputFile file to be read

@@ -17,9 +17,9 @@ class RegexExcMain implements RegexExc {
 
   // return true if filename extension is jpg or jpeg (case-insensitive)
   public boolean matchJpeg(String filename) {
-      if (filename == null || filename.isEmpty()) {
-          return false;
-      }
+    if (filename == null || filename.isEmpty()) {
+      return false;
+    }
     final String regex = "([^\\s]+(\\.(?i)(jpe?g))$)";
     Pattern pattern = Pattern.compile(regex);
     Matcher matcher = pattern.matcher(filename.toLowerCase(Locale.ROOT));
@@ -29,9 +29,9 @@ class RegexExcMain implements RegexExc {
   // return true if ip address is valid
   // to simplify the problem, IP address range is from 0.0.0.0 to 999.999.999.999
   public boolean matchIp(String ip) {
-      if (ip == null || ip.isEmpty()) {
-          return false;
-      }
+    if (ip == null || ip.isEmpty()) {
+      return false;
+    }
     final String regex =
         "^([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." +
             "([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." +
@@ -44,17 +44,15 @@ class RegexExcMain implements RegexExc {
 
   // return true if line is empty (e.g. empty, white space, tabs, etc...)
   public boolean isEmptyLine(String line) {
-      if (line == null) {
-          return true;
-      }
-      if (line.isEmpty()) {
-          return true;
-      }
+    if (line == null) {
+      return true;
+    }
+    if (line.isEmpty()) {
+      return true;
+    }
     final String regex = "\\s";
     Pattern pattern = Pattern.compile(regex);
     Matcher matcher = pattern.matcher(line.toLowerCase(Locale.ROOT));
     return matcher.matches();
   }
-
-  ;
 }

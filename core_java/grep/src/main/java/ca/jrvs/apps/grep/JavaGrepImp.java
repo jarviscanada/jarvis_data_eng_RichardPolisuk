@@ -50,6 +50,7 @@ public class JavaGrepImp implements JavaGrep {
 
   /**
    * Top level search workflow
+   *
    * @throws IOException Illegal IO exception
    */
   @Override
@@ -153,7 +154,7 @@ public class JavaGrepImp implements JavaGrep {
 
   /**
    * Write lines to a file
-   *
+   * <p>
    * Explore: FileOutputStream, OutputStreamWriter, and BufferedWriter
    *
    * @param lines matched line
@@ -173,6 +174,7 @@ public class JavaGrepImp implements JavaGrep {
 
   /**
    * Gets root path
+   *
    * @return Root path
    */
   @Override
@@ -182,6 +184,7 @@ public class JavaGrepImp implements JavaGrep {
 
   /**
    * Sets root path
+   *
    * @param rootPath Root path
    */
   @Override
@@ -191,6 +194,7 @@ public class JavaGrepImp implements JavaGrep {
 
   /**
    * Getter
+   *
    * @return Regular expression
    */
   @Override
@@ -200,6 +204,7 @@ public class JavaGrepImp implements JavaGrep {
 
   /**
    * Sets RegEx expression
+   *
    * @param regex Regular expression
    */
   @Override
@@ -209,6 +214,7 @@ public class JavaGrepImp implements JavaGrep {
 
   /**
    * Gets output file name
+   *
    * @return output file
    */
   @Override
@@ -218,6 +224,7 @@ public class JavaGrepImp implements JavaGrep {
 
   /**
    * Sets output file name
+   *
    * @param outFile Output file
    */
   @Override
