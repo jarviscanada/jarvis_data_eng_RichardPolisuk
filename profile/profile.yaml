@@ -5,7 +5,7 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_RichardPol
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: Experienced Information Technology professional with system and infrastructure architecture experience currently pursuing software engineering opportunities. Professional experience with IBM Canada, CIBC, and TELUS. Academic experience from McGill University and Seneca College.
+summary: I am an experienced information technology professional with systems, network, and infrastructure architecture experience. I am currently pursuing software engineering opportunities. I have extensive professional experience with IBM Canada, CIBC, and TELUS. While at IBM Canada, I worked as a mainframe software developer, was part of the Internet services team, and eventually worked with CIBC in developing their first web based banking solution. I continued working on this project once I joined CIBC and then was the Chief Architect for the CIBC VeriSign PKI product. I was involved in running, installing, configuring, and supporting the CIBC VeriSign secure datacenter environment. At TELUS Health (which was called BCE Emergis and then Emergis), I was an infrastructure Architect working in datacenter projects helping to bring products into the production environment. As well I supported the development network including switches, routers, and Load Balancers and worked on migrating this environment to a VMWare NSX virtual networking environment. My final role at TELUS was part of the TELUS Health team that was building a new AWS environment where I helped to administer many different DevOps tools. I have a Bachelor of Commerce degree with a major in Management Information Systems from McGill University and I received an Ontario College Advanced Diploma in Computer Programming and Analysis from Seneca College. While at Seneca College I learned software development and gained experience in many different programming languages, web development, networking, database systems, Big Data, and mobile development. In the future I hope to leverage all my experience to be a software developer or a DevOps developer.
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -66,12 +66,12 @@ jarvis_projects:
 # List of personal or academic projects
 # Feel free to add more projects
 highlighted_projects:
-    #project name
+  #project name
   - name: "Donor's Choice"
     git_url: "https://github.com/rpolisuk/donors-choice/tree/DonorsChoiceAPI"
     description: Seneca College final project which allowed consumers to donate their clothes to any charity of their choice. Configured the MongoDB environment and loaded the charity information. Developed the required APIs to allow pickups, donations, and authentication using node.js and Express.js.
     #URL is optional
-#    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
+    #    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
 #    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
 #  - name: "Machine Learning"
@@ -113,13 +113,13 @@ professional_experience:
     description: "Implemented the technical infrastructure for President’s Choice Financial. Designed, set up and coordinated RS/6000 SP infrastructure. Coordinated team of CIBC, INTRIA-HP and IBM resources. Coded a component of the Client/Server SEDAR application for the Canadian Depository for Securities in C and Microsoft Visual Basic. Designed and coded internal Mainframe applications for IBM Canada in REXX and ISPF for VM."
 
 #List of education
-education: 
+education:
   - school_name: "Seneca College"
     duration: "2019-2021"
     degree: "Ontario College Advanced Diploma"
     department: "Computer Programming and Analysis"
     # optional
-    awards_achievements: 
+    awards_achievements:
       - "High Honours"
       - "President's Honour List (Fall 2019, Winter 2020, Summer 2020, Fall 2020, Winter 2021, Summer 2021)"
       - "GPA: 4.0/4.0"
