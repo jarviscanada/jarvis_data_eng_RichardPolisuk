@@ -7,13 +7,10 @@ package ca.jrvs.practice.codingChallenge;
 //
 // Requirements: Simple Check (use String.contains)
 
+/**
+ * Big-O: O(n) Justification: Array will be processed n times
+ */
 public class RotateString {
-
-  public static void main(String[] args) {
-    RotateString rs = new RotateString();
-    System.out.println(rs.rotateString("abcde", "cdeab"));
-    System.out.println(rs.rotateString("abcde", "abced"));
-  }
 
   public boolean rotateString(String s, String goal) {
     if (s.length() != goal.length()) { // Return false right away if not equal size
