@@ -26,6 +26,6 @@ public class OddEven {
     // 14      = 1110       | 21 = 010101      <= Example for i
     // 1       = 0001       | 1  = 000001
     // Bitwise = 1111 = 15  |    = 010101 = 21
-    return (i ^ 1) == i + 1 ? "even" : "odd";
+    return ((i ^ 1) == (i + 1)) ? "even" : "odd";
   }
 }
