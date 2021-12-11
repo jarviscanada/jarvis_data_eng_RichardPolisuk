@@ -4,12 +4,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Big-O: O(n) Justification: Process n times
+ */
 public class DuplicateCharacter {
-
-  public static void main(String[] args) {
-    DuplicateCharacter dc = new DuplicateCharacter();
-    System.out.println(dc.findDuplicate("A black cat"));
-  }
 
   public ArrayList<String> findDuplicate(String str) {
     Map<Character, Integer> map = new HashMap<>();
