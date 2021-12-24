@@ -4,12 +4,6 @@ import java.util.Stack;
 
 public class ValidParentheses {
 
-  public static void main(String[] args) {
-    ValidParentheses vp = new ValidParentheses();
-    System.out.println(vp.isValid("()[]{}"));
-    // "{[]}" => Should be true
-  }
-
   public boolean isValid(String s) {
     // Needs to be even
     if (s.length() % 2 != 0) {
