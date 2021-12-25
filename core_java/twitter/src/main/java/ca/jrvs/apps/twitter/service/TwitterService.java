@@ -2,9 +2,15 @@ package ca.jrvs.apps.twitter.service;
 
 import ca.jrvs.apps.twitter.dao.TwitterDao;
 import ca.jrvs.apps.twitter.model.Tweet;
+import java.io.IOException;
 import java.util.List;
 
 public class TwitterService extends TwitterDao implements Service{
+
+  public TwitterService(String consumerKey, String consumerSecret, String accessToken,
+      String tokenSecret) throws IOException {
+    super(consumerKey, consumerSecret, accessToken, tokenSecret);
+  }
 
   /**
    * Validate and post a user input Tweet
