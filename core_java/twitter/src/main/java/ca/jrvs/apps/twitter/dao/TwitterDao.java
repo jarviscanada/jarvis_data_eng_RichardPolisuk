@@ -26,7 +26,6 @@ public class TwitterDao implements CrdDao<Tweet, String> {
 
   // Response code
   private static final int HTTP_OK = 200;
-
   private HttpHelper httpHelper;
 
   @Autowired
@@ -42,8 +41,10 @@ public class TwitterDao implements CrdDao<Tweet, String> {
    */
   @Override
   public Tweet create(Tweet entity) {
-
-    URI uri = getUri(entity);
+    PercentEscaper percentEscaper = new PercentEscaper("", false);
+    URI uri = URI.create(
+        API_BASE_URI + POST_PATH + QUERY_SYM + "status" + EQUAL + percentEscaper.escape(
+            entity.getText()));
     HttpResponse response = httpHelper.httpPost(uri);
     return parseResponseBody(response, HTTP_OK);
   }
@@ -56,8 +57,12 @@ public class TwitterDao implements CrdDao<Tweet, String> {
    */
   @Override
   public Tweet findById(String s) {
-    String uriStr = API_BASE_URI + SHOW_PATH + QUERY_SYM + "id" + EQUAL + s;
-    URI uri = getUri(uriStr);
+    URI uri;
+    try {
+      uri = new URI(API_BASE_URI + SHOW_PATH + QUERY_SYM + "id" + EQUAL + s);
+    } catch (URISyntaxException ex) {
+      throw new IllegalArgumentException("Invalid id input", ex);
+    }
     HttpResponse response = httpHelper.httpGet(uri);
     return parseResponseBody(response, HTTP_OK);
   }
@@ -70,8 +75,12 @@ public class TwitterDao implements CrdDao<Tweet, String> {
    */
   @Override
   public Tweet deleteById(String s) {
-    String uriStr = API_BASE_URI + DELETE_PATH + "/" + s + ".json";
-    URI uri = getUri(uriStr);
+    URI uri;
+    try {
+      uri = new URI(API_BASE_URI + DELETE_PATH + "/" + s + ".json");
+    } catch (URISyntaxException ex) {
+      throw new IllegalArgumentException("Invalid id input", ex);
+    }
     HttpResponse response = httpHelper.httpPost(uri);
     return parseResponseBody(response, HTTP_OK);
   }
@@ -111,27 +120,17 @@ public class TwitterDao implements CrdDao<Tweet, String> {
     return tweet;
   }
 
-  private URI getUri(String s) {
-    URI uri;
-    try {
-      uri = new URI(s);
-    } catch (URISyntaxException e) {
-      throw new IllegalArgumentException("Invalid uri string", e);
-    }
-    return uri;
-  }
-
   private URI getUri(Tweet tweet) {
-    String textStatus = tweet.getText();
-    Double longitude = tweet.getCoordinates().getCoordinates().get(0);
-    Double latitude = tweet.getCoordinates().getCoordinates().get(1);
-
+    URI uri;
     PercentEscaper percentEscaper = new PercentEscaper("", false);
-    String uriStr =
-        API_BASE_URI + POST_PATH + QUERY_SYM + "status" + EQUAL + percentEscaper.escape(textStatus)
-            +
-            AMPERSAND + "long" + EQUAL + longitude + AMPERSAND + "lat" + EQUAL + latitude;
-
-    return getUri(uriStr);
+    try {
+      uri = new URI(API_BASE_URI + POST_PATH + QUERY_SYM + "status" + EQUAL + percentEscaper
+          .escape(tweet.getText()) + AMPERSAND + "long" + EQUAL + tweet.getCoordinates()
+          .getCoordinates().get(0) + AMPERSAND + "lat" + EQUAL + tweet.getCoordinates()
+          .getCoordinates().get(1));
+      return uri;
+    } catch (URISyntaxException ex) {
+      throw new IllegalArgumentException("Invalid input", ex);
+    }
   }
 }
