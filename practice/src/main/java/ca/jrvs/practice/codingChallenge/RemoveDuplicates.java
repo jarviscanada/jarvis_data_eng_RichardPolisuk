@@ -13,12 +13,6 @@ package ca.jrvs.practice.codingChallenge;
 // Return k after placing the final result in the first k slots of nums.
 public class RemoveDuplicates {
 
-  public static void main(String[] args) {
-    int[] nums = new int[]{0, 0, 1, 1, 1, 2, 2, 3, 4, 4};
-    RemoveDuplicates rd = new RemoveDuplicates();
-    System.out.println(rd.removeDuplicates(nums));
-  }
-
   public int removeDuplicates(int[] nums) {
     int unique = 0; // First pointer
     int duplicate = 1; // Second pointer
