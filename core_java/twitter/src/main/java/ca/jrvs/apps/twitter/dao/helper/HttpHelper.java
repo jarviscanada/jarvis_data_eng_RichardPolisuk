@@ -7,15 +7,15 @@ public interface HttpHelper {
 
   /**
    * Execute a HTTP Post call
-   * @param uri
-   * @return
+   * @param uri URI
+   * @return Return HTTP response
    */
   HttpResponse httpPost(URI uri);
 
   /**
    * Execute a HTTP Get call
-   * @param uri
-   * @return
+   * @param uri URI
+   * @return Return HTTP response
    */
   HttpResponse httpGet(URI uri);
 }

@@ -29,7 +29,7 @@
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
-      <version>4.1.1</version>
+      <version>4.5.13</version>
     </dependency>
 
     <!--oauth 1.0 and httpclient4-->
@@ -39,7 +39,7 @@
       <version>1.2.1.2</version>
     </dependency>
     <!--Jackson JSON-->
-    <!--dependecy version is interited from the parent-->
+    <!--dependency version is inherited from the parent-->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
