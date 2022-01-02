@@ -2,7 +2,6 @@ package ca.jrvs.practice.codingChallenge;
 
 import static org.junit.Assert.*;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -19,6 +18,6 @@ public class ValidParenthesesTest {
 
   @Test
   public void isValid() {
-    Assert.assertEquals(true, validParentheses.isValid("()[]{}"));
+    assertTrue(validParentheses.isValid("()[]{}"));
   }
 }
