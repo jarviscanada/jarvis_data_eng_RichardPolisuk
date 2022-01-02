@@ -1,7 +1,5 @@
 package ca.jrvs.practice.codingChallenge;
 
-import static org.junit.Assert.*;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,12 +18,12 @@ public class IsPalindromeTest {
   @Test
   public void isPalindromeRecursion() {
     System.out.println("Test case: test isPalindromeRecursion method from the test class");
-    Assert.assertEquals(true, isp.isPalindromeRecursion("A man, a plan, a canal: Panama"));
+    Assert.assertTrue(isp.isPalindromeRecursion("A man, a plan, a canal: Panama"));
   }
 
   @Test
   public void isPalindromeTwoPointers() {
     System.out.println("Test case: test isPalindromeTwoPointers method from the test class");
-    Assert.assertEquals(true, isp.isPalindromeTwoPointers("A man, a plan, a canal: Panama"));
+    Assert.assertTrue(isp.isPalindromeTwoPointers("A man, a plan, a canal: Panama"));
   }
 }

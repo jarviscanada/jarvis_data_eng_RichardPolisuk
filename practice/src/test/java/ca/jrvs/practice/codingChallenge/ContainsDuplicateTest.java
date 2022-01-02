@@ -1,7 +1,5 @@
 package ca.jrvs.practice.codingChallenge;
 
-import static org.junit.Assert.*;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,12 +20,12 @@ public class ContainsDuplicateTest {
   @Test
   public void containsDuplicateSorting() {
     System.out.println("Test case: test containsDuplicateSorting method from the test class");
-    Assert.assertEquals(true, containsDuplicate.containsDuplicateSorting(nums1));
+    Assert.assertTrue(containsDuplicate.containsDuplicateSorting(nums1));
   }
 
   @Test
   public void containsDuplicateSet() {
     System.out.println("Test case: test containsDuplicateSet method from the test class");
-    Assert.assertEquals(false, containsDuplicate.containsDuplicateSet(nums2));
+    Assert.assertFalse(containsDuplicate.containsDuplicateSet(nums2));
   }
 }
