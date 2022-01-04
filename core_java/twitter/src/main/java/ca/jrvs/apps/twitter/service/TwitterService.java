@@ -30,7 +30,7 @@ public class TwitterService implements Service {
   }
 
   /**
-   * check if tweet text is empty or exceeds the maximum length and check if coordinages are out of range
+   * check if tweet text is empty or exceeds the maximum length and check if coordinates are out of range
    *
    * @param tweet Tweet to validate
    */

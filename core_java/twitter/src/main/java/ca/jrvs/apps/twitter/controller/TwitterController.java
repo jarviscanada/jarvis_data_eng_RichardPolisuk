@@ -10,7 +10,7 @@ import java.util.List;
 @org.springframework.stereotype.Controller
 public class TwitterController implements Controller {
 
-  private static final String COORD_SEP = ":";
+  private static final String COORDINATE_SEP = ":";
   private static final String COMMA = ",";
 
   private final Service service;
@@ -39,7 +39,7 @@ public class TwitterController implements Controller {
     float lat;
     String text = args[1];
     String coordinate = args[2];
-    String[] coordinates = coordinate.split(COORD_SEP);
+    String[] coordinates = coordinate.split(COORDINATE_SEP);
 
     if (coordinates.length != 2 || text.isEmpty()) {
       throw new IllegalArgumentException(

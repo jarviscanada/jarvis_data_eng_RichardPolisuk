@@ -40,7 +40,7 @@ public class TwitterCLIApp {
     Service service = new TwitterService(dao);
     Controller controller = new TwitterController(service);
     TwitterCLIApp twitterCLIApp = new TwitterCLIApp(controller);
-    //start app
+
     try {
       twitterCLIApp.run(args);
     } catch (Exception e) {
@@ -71,7 +71,7 @@ public class TwitterCLIApp {
     try {
       System.out.println(JsonParser.toJson(tweet, true, false));
     } catch (JsonProcessingException e) {
-      throw new RuntimeException("Unable to convert tweet object to string", e);
+      throw new RuntimeException("Unable to convert Tweet to String", e);
     }
   }
 }
