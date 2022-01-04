@@ -75,8 +75,8 @@ public class TwitterController implements Controller {
 
   @Override
   public List<Tweet> deleteTweet(String[] args) {
-    if (args.length != 3) {
-      throw new IllegalArgumentException("USAGE: TwitterCLIApp show \"id\" \"options..\"");
+    if (args.length < 2) {
+      throw new IllegalArgumentException("USAGE: TwitterCLIApp delete \"id\" \"options..\"");
     }
     String id = args[1];
     String[] ids = id.split(COMMA);

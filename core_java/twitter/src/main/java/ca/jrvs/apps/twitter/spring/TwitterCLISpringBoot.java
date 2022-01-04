@@ -21,7 +21,11 @@ public class TwitterCLISpringBoot implements CommandLineRunner {
     SpringApplication app = new SpringApplication(TwitterCLISpringBoot.class);
 
     app.setWebApplicationType(WebApplicationType.NONE);
-    app.run(args);
+    try {
+      app.run(args);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
   }
 
   @Override
