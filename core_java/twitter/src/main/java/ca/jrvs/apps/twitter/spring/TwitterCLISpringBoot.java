@@ -18,10 +18,10 @@ public class TwitterCLISpringBoot implements CommandLineRunner {
   }
 
   public static void main(String[] args) {
-    SpringApplication springApplication = new SpringApplication(TwitterCLISpringBoot.class);
+    SpringApplication app = new SpringApplication(TwitterCLISpringBoot.class);
 
-    springApplication.setWebApplicationType(WebApplicationType.NONE);
-    springApplication.run(args);
+    app.setWebApplicationType(WebApplicationType.NONE);
+    app.run(args);
   }
 
   @Override

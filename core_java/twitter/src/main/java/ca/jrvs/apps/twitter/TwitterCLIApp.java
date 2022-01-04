@@ -39,12 +39,12 @@ public class TwitterCLIApp {
     CrdDao<Tweet, String> dao = new TwitterDao(httpHelper);
     Service service = new TwitterService(dao);
     Controller controller = new TwitterController(service);
-    TwitterCLIApp twitterCLIApp = new TwitterCLIApp(controller);
+    TwitterCLIApp app = new TwitterCLIApp(controller);
 
     try {
-      twitterCLIApp.run(args);
+      app.run(args);
     } catch (Exception e) {
-      twitterCLIApp.logger.error(e.getMessage(), e);
+      app.logger.error(e.getMessage(), e);
     }
   }
 
