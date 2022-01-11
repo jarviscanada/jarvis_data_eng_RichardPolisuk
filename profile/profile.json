@@ -38,6 +38,7 @@
     },
     {
       "description": [
+        "Twitter App: Developed a Twitter Java program which allows via a Command Line Interface to create, delete, and query tweets using the Twitter API and REST calls running in a Docker container.",
         "JDBC App: Wrote a Java program to learn the datbase CRUD (create, read, update, and delete) functions using JDBC with a Postgre database running in a Docker container.",
         "Grep App: Coded a clone of the Linux egrep program that reads all the files in the current directory and below examining each file for the regular expression which was passed to the program to be searched. Developed using Java, streams, lambda, and regular expresssions. "
       ],

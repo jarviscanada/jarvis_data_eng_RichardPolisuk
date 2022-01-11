@@ -38,13 +38,11 @@ skills:
 jarvis_projects:
   - name: "Cluster Monitor"
     git_url: "/linux_sql"
-    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
-    # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: Programmed a client/server monitoring tool using Bash scripts, Docker containers, Postgres database, and SQL queries.
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
-#      - "Twitter App: "
+      - "Twitter App: Developed a Twitter Java program which allows via a Command Line Interface to create, delete, and query tweets using the Twitter API and REST calls running in a Docker container."
       - "JDBC App: Wrote a Java program to learn the datbase CRUD (create, read, update, and delete) functions using JDBC with a Postgre database running in a Docker container."
       - "Grep App: Coded a clone of the Linux egrep program that reads all the files in the current directory and below examining each file for the regular expression which was passed to the program to be searched. Developed using Java, streams, lambda, and regular expresssions. "
 #  - name: "Springboot App"
