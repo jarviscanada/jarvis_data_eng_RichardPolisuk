@@ -17,6 +17,12 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_RichardPol
 
 **Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_RichardPolisuk/tree/master/linux_sql)]: Programmed a client/server monitoring tool using Bash scripts, Docker containers, Postgres database, and SQL queries.
 
+**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_RichardPolisuk/tree/master/core_java)]:
+      
+  - Twitter App: Developed a Twitter Java program which allows via a Command Line Interface to create, delete, and query tweets using the Twitter API and REST calls running in a Docker container.
+  - JDBC App: Wrote a Java program to learn the datbase CRUD (create, read, update, and delete) functions using JDBC with a Postgre database running in a Docker container.
+  - Grep App: Coded a clone of the Linux egrep program that reads all the files in the current directory and below examining each file for the regular expression which was passed to the program to be searched. Developed using Java, streams, lambda, and regular expresssions. 
+
 
 ## Highlighted Projects
 **Donor's Choice** [[GitHub](https://github.com/rpolisuk/donors-choice/tree/DonorsChoiceAPI)]: Seneca College final project which allowed consumers to donate their clothes to any charity of their choice. Configured the MongoDB environment and loaded the charity information. Developed the required APIs to allow pickups, donations, and authentication using node.js and Express.js.
@@ -24,7 +30,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_RichardPol
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2021-present)**: Developed a Bash script monitoring system with a Postgres database.
+**Software Developer, Jarvis (2021-present)**: Developed a Bash script monitoring system with a Postgres database. Coded a Java program to clone the egrep command to look for patterns in files. Wrote a program to use JDBC with the Postgre database in a Docker container.
 
 **Senior Design Specialist, TELUS Health (2017-2019)**: Administered TELUS Health Cloud Operations team health applications running in Amazon Web Services (AWS) using Zendesk, OpsGenie, Atlassian suite (Confluence, JIRA, Bitbucket), Datadog, Slack, Splunk, and Python scripting.
 
