@@ -1,24 +1,22 @@
 package ca.jrvs.apps.twitter.controller;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
 import ca.jrvs.apps.twitter.dao.TwitterDao;
 import ca.jrvs.apps.twitter.dao.helper.HttpHelper;
 import ca.jrvs.apps.twitter.dao.helper.TwitterHttpHelper;
 import ca.jrvs.apps.twitter.model.Tweet;
 import ca.jrvs.apps.twitter.service.Service;
 import ca.jrvs.apps.twitter.service.TwitterService;
+import java.util.List;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.List;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 @Ignore
 public class TwitterControllerIntTest {
+
   private TwitterController controller;
 
   @Before
@@ -28,7 +26,8 @@ public class TwitterControllerIntTest {
     String accessToken = System.getenv("accessToken");
     String tokenSecret = System.getenv("tokenSecret");
 
-    HttpHelper twitterHttpHelper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken, tokenSecret);
+    HttpHelper twitterHttpHelper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken,
+        tokenSecret);
     TwitterDao dao = new TwitterDao(twitterHttpHelper);
     Service service = new TwitterService(dao);
     controller = new TwitterController(service);
@@ -36,7 +35,7 @@ public class TwitterControllerIntTest {
 
   @Test
   public void shouldPostTweet() {
-    String text = "Testing Post #Controller "+ System.currentTimeMillis();
+    String text = "Testing Post #Controller " + System.currentTimeMillis();
 
     Float lon = 1.0f;
     Float lat = 1.1f;
