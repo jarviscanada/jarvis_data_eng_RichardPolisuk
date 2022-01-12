@@ -1,4 +1,4 @@
-package ca.jrvs.practice.codingChallenge;
+package ca.jrvs.practice.codingChallenge.c27;
 
 import ca.jrvs.practice.codingChallenge.c14.ListNode;
 

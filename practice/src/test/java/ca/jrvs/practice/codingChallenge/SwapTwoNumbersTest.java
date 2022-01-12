@@ -1,5 +1,6 @@
 package ca.jrvs.practice.codingChallenge;
 
+import ca.jrvs.practice.codingChallenge.c18.SwapTwoNumbers;
 import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Before;

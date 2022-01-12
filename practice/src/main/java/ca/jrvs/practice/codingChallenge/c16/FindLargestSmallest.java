@@ -1,4 +1,4 @@
-package ca.jrvs.practice.codingChallenge;
+package ca.jrvs.practice.codingChallenge.c16;
 
 // Find largest & smallest element in an array
 

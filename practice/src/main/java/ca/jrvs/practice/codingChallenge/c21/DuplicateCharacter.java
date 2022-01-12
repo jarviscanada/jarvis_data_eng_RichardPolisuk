@@ -1,4 +1,4 @@
-package ca.jrvs.practice.codingChallenge;
+package ca.jrvs.practice.codingChallenge.c21;
 
 import java.util.ArrayList;
 import java.util.HashMap;

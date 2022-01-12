@@ -1,15 +1,15 @@
-package ca.jrvs.practice.codingChallenge;
+package ca.jrvs.practice.codingChallenge.c18;
 
 public class SwapTwoNumbers {
 
-  int[] swapMath(int[] num) {
+  public int[] swapMath(int[] num) {
     num[0] += num[1];
     num[1] = num[0] - num[1];
     num[0] -= num[1];
     return num;
   }
 
-  int[] swapBit(int[] num) {
+  public int[] swapBit(int[] num) {
     num[0] ^= num[1];
     num[1] = num[0] ^ num[1];
     num[0] ^= num[1];

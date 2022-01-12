@@ -1,5 +1,6 @@
 package ca.jrvs.practice.codingChallenge;
 
+import ca.jrvs.practice.codingChallenge.c26.MergeSortedArray;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;

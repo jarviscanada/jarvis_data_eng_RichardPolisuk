@@ -1,4 +1,4 @@
-package ca.jrvs.practice.codingChallenge;
+package ca.jrvs.practice.codingChallenge.c17;
 
 public class LetterWithNumber {
 
@@ -8,7 +8,7 @@ public class LetterWithNumber {
   /**
    * Big-O: O(n) Justification: one n loops required
    */
-  void PrintLetterWithNumber(String input) {
+  public void PrintLetterWithNumber(String input) {
     System.out.println("input: " + input);
     System.out.print("output: ");
     for (int i = 0; i < input.length(); i++) {

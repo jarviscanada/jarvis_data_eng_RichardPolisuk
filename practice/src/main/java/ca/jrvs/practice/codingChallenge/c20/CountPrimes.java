@@ -1,4 +1,4 @@
-package ca.jrvs.practice.codingChallenge;
+package ca.jrvs.practice.codingChallenge.c20;
 
 // Given an integer n, return the number of prime numbers that are strictly less than n.
 

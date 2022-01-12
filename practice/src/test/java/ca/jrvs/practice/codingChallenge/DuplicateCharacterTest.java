@@ -1,5 +1,6 @@
 package ca.jrvs.practice.codingChallenge;
 
+import ca.jrvs.practice.codingChallenge.c21.DuplicateCharacter;
 import java.util.ArrayList;
 import org.junit.Assert;
 import org.junit.Before;

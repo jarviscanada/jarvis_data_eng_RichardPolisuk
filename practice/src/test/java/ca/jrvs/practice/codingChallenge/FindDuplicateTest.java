@@ -1,5 +1,6 @@
 package ca.jrvs.practice.codingChallenge;
 
+import ca.jrvs.practice.codingChallenge.c22.FindDuplicate;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Ignore;

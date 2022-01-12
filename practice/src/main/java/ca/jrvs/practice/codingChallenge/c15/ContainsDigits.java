@@ -1,10 +1,10 @@
-package ca.jrvs.practice.codingChallenge;
+package ca.jrvs.practice.codingChallenge.c15;
 
 // Check if a String contains only digits
 
 public class ContainsDigits {
 
-  boolean containsDigitsASCII(String str) {
+  public boolean containsDigitsASCII(String str) {
     for (int i = 0; i < str.length(); i++) {
       int ch = str.charAt(i);
       if (ch < 48 || ch > 57) {
@@ -15,7 +15,7 @@ public class ContainsDigits {
   }
 
   // Use Java API (e.g Integer.valueOf)
-  boolean containsDigitsValueOf(String str) {
+  public boolean containsDigitsValueOf(String str) {
     try {
       Integer.valueOf(str, 10);
     } catch (NumberFormatException e) {

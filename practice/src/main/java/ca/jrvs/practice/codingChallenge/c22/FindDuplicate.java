@@ -1,4 +1,4 @@
-package ca.jrvs.practice.codingChallenge;
+package ca.jrvs.practice.codingChallenge.c22;
 
 import java.util.Arrays;
 import java.util.HashSet;
