@@ -1,5 +1,6 @@
 package ca.jrvs.practice.codingChallenge;
 
+import ca.jrvs.practice.codingChallenge.c09.RotateString;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Ignore;

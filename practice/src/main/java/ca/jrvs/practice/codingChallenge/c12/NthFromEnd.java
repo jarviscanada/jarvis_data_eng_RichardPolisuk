@@ -1,4 +1,4 @@
-package ca.jrvs.practice.codingChallenge;
+package ca.jrvs.practice.codingChallenge.c12;
 
 // Given a linked list and an integer N, the task is to delete the Nth node from
 // the end of the given linked list.
@@ -23,7 +23,7 @@ public class NthFromEnd {
   }
 
   // Delete nth node
-  void deleteNodeFromEnd(int n) {
+  public void deleteNodeFromEnd(int n) {
 
     Node first = head; // First pointer starting at the head of the list
     Node second = head; // Second pointer starting at head

@@ -1,5 +1,7 @@
 package ca.jrvs.practice.codingChallenge;
 
+import ca.jrvs.practice.codingChallenge.c14.ListNode;
+
 public class ReverseLinkedList {
 
   // Recursion

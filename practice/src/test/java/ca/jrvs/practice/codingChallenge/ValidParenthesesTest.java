@@ -2,6 +2,7 @@ package ca.jrvs.practice.codingChallenge;
 
 import static org.junit.Assert.*;
 
+import ca.jrvs.practice.codingChallenge.c07.ValidParentheses;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;

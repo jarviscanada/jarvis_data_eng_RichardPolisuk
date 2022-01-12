@@ -1,13 +1,13 @@
-package ca.jrvs.practice.codingChallenge;
+package ca.jrvs.practice.codingChallenge.c13;
 
 // Two pointers trick
 public class MiddleOfTheLinkedList {
 
   ListNode head;
 
-  static class ListNode {
+  public static class ListNode {
 
-    int data;
+    public int data;
     ListNode next;
 
     ListNode(int d) {
@@ -16,7 +16,7 @@ public class MiddleOfTheLinkedList {
     }
   }
 
-  ListNode middleNode() {
+  public ListNode middleNode() {
     ListNode first_ptr = head;
     ListNode second_ptr = head;
     if (head != null) {

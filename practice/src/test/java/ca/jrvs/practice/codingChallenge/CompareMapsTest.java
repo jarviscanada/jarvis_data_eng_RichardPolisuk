@@ -1,6 +1,8 @@
 package ca.jrvs.practice.codingChallenge;
 
 import static org.junit.Assert.*;
+
+import ca.jrvs.practice.codingChallenge.c01.CompareMaps;
 import java.util.HashMap;
 import java.util.Map;
 

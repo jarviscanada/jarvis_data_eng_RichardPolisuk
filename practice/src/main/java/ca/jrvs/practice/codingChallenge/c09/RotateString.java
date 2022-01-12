@@ -1,4 +1,4 @@
-package ca.jrvs.practice.codingChallenge;
+package ca.jrvs.practice.codingChallenge.c09;
 
 // Given two strings s and goal, return true if and only if s can become goal
 // after some number of shifts on s.

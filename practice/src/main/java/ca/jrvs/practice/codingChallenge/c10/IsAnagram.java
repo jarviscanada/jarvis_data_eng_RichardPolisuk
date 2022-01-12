@@ -1,4 +1,4 @@
-package ca.jrvs.practice.codingChallenge;
+package ca.jrvs.practice.codingChallenge.c10;
 
 // Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 

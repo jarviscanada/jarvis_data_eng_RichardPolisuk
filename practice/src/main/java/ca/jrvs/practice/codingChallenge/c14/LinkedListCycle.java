@@ -1,4 +1,4 @@
-package ca.jrvs.practice.codingChallenge;
+package ca.jrvs.practice.codingChallenge.c14;
 
 // Given head, the head of a linked list, determine if the linked list has a cycle in it.
 //
@@ -7,24 +7,6 @@ package ca.jrvs.practice.codingChallenge;
 // node that tail's next pointer is connected to. Note that pos is not passed as a parameter.
 //
 // Return true if there is a cycle in the linked list. Otherwise, return false.
-
-class ListNode {
-
-  int val;
-  ListNode next;
-
-  ListNode() {
-  }
-
-  ListNode(int val) {
-    this.val = val;
-  }
-
-  ListNode(int val, ListNode next) {
-    this.val = val;
-    this.next = next;
-  }
-}
 
 public class LinkedListCycle {
 

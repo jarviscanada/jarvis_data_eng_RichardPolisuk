@@ -1,4 +1,4 @@
-package ca.jrvs.practice.codingChallenge;
+package ca.jrvs.practice.codingChallenge.c05;
 
 import java.util.ArrayDeque;
 import java.util.LinkedList;

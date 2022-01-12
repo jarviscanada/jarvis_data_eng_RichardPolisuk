@@ -1,6 +1,8 @@
 package ca.jrvs.practice.codingChallenge;
 
 import static org.junit.Assert.*;
+
+import ca.jrvs.practice.codingChallenge.c10.IsAnagram;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
