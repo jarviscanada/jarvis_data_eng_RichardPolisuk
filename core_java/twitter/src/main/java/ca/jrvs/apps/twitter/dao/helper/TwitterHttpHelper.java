@@ -68,7 +68,7 @@ public class TwitterHttpHelper implements HttpHelper {
   }
 
   @Override
-  /**
+  /*
    * HTTP POST request
    */
   public HttpResponse httpPost(URI uri) {

@@ -1,12 +1,13 @@
 package ca.jrvs.practice.codingChallenge;
 
-import static org.junit.Assert.*;
-
+import ca.jrvs.practice.codingChallenge.c21.DuplicateCharacter;
 import java.util.ArrayList;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
+@Ignore
 public class DuplicateCharacterTest {
 
   private DuplicateCharacter duplicateCharacter;

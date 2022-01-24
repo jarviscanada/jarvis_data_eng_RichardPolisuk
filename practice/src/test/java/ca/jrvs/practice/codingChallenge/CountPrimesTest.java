@@ -1,11 +1,12 @@
 package ca.jrvs.practice.codingChallenge;
 
-import static org.junit.Assert.*;
-
+import ca.jrvs.practice.codingChallenge.c20.CountPrimes;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
+@Ignore
 public class CountPrimesTest {
 
   private CountPrimes countPrimes;

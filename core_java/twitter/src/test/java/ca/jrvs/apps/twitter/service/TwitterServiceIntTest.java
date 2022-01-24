@@ -16,8 +16,8 @@ import static org.junit.Assert.assertEquals;
 
 @Ignore
 public class TwitterServiceIntTest {
+
   private TwitterService service;
-  String hashtags = " #Service ";
 
   @Before
   public void setUp() {
@@ -26,7 +26,8 @@ public class TwitterServiceIntTest {
     String accessToken = System.getenv("accessToken");
     String tokenSecret = System.getenv("tokenSecret");
 
-    HttpHelper httpHelper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken, tokenSecret);
+    HttpHelper httpHelper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken,
+        tokenSecret);
 
     TwitterDao dao = new TwitterDao(httpHelper);
     service = new TwitterService(dao);
@@ -34,7 +35,8 @@ public class TwitterServiceIntTest {
 
   @Test
   public void shouldPostTweet() {
-    Tweet tweetWillBePosted = TweetUtil.createTweet("Post testing " + System.currentTimeMillis(), 30.0f, 31.0f);
+    Tweet tweetWillBePosted = TweetUtil.createTweet("Post Int Test " + System.currentTimeMillis(),
+        30.0f, 31.0f);
 
     Tweet postTweet = service.postTweet(tweetWillBePosted);
 
@@ -49,7 +51,8 @@ public class TwitterServiceIntTest {
 
   @Test
   public void shouldShowTweet() {
-    Tweet tweetShouldBePosted = TweetUtil.createTweet("Show post testing" + System.currentTimeMillis(), 40.0f, 41.0f);
+    Tweet tweetShouldBePosted = TweetUtil.createTweet(
+        "Show Post Int Test " + System.currentTimeMillis(), 40.0f, 41.0f);
 
     Tweet showTweet = service.postTweet(tweetShouldBePosted);
 
@@ -64,8 +67,10 @@ public class TwitterServiceIntTest {
 
   @Test
   public void shouldDeleteTweet() {
-    Tweet tweet1ShouldBeDeleted = TweetUtil.createTweet("Delete post1 testing" + System.currentTimeMillis(), 50.0f, 51.0f);
-    Tweet tweet2ShouldBeDeleted = TweetUtil.createTweet("Delete post2 testing" + System.currentTimeMillis(), 50.0f, 51.0f);
+    Tweet tweet1ShouldBeDeleted = TweetUtil.createTweet(
+        "Delete Post 1 Int Test " + System.currentTimeMillis(), 50.0f, 51.0f);
+    Tweet tweet2ShouldBeDeleted = TweetUtil.createTweet(
+        "Delete Post 2 Int Test " + System.currentTimeMillis(), 50.0f, 51.0f);
 
     Tweet deletedTweet1 = service.postTweet(tweet1ShouldBeDeleted);
     Tweet deletedTweet2 = service.postTweet(tweet2ShouldBeDeleted);
