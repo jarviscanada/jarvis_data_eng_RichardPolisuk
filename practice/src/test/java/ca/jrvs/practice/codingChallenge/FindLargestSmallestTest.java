@@ -1,12 +1,13 @@
 package ca.jrvs.practice.codingChallenge;
 
-import static org.junit.Assert.*;
-
+import ca.jrvs.practice.codingChallenge.c16.FindLargestSmallest;
 import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
+@Ignore
 public class FindLargestSmallestTest {
 
   private FindLargestSmallest fls;

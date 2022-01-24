@@ -1,11 +1,12 @@
 package ca.jrvs.practice.codingChallenge;
 
-import static org.junit.Assert.*;
-
+import ca.jrvs.practice.codingChallenge.c24.ContainsDuplicate;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
+@Ignore
 public class ContainsDuplicateTest {
 
   private ContainsDuplicate containsDuplicate;
@@ -22,12 +23,12 @@ public class ContainsDuplicateTest {
   @Test
   public void containsDuplicateSorting() {
     System.out.println("Test case: test containsDuplicateSorting method from the test class");
-    Assert.assertEquals(true, containsDuplicate.containsDuplicateSorting(nums1));
+    Assert.assertTrue(containsDuplicate.containsDuplicateSorting(nums1));
   }
 
   @Test
   public void containsDuplicateSet() {
     System.out.println("Test case: test containsDuplicateSet method from the test class");
-    Assert.assertEquals(false, containsDuplicate.containsDuplicateSet(nums2));
+    Assert.assertFalse(containsDuplicate.containsDuplicateSet(nums2));
   }
 }

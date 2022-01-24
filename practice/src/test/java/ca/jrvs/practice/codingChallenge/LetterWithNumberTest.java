@@ -2,14 +2,17 @@ package ca.jrvs.practice.codingChallenge;
 
 import static org.junit.Assert.*;
 
+import ca.jrvs.practice.codingChallenge.c17.LetterWithNumber;
 import java.io.ByteArrayOutputStream;
 import java.io.FileDescriptor;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
+@Ignore
 public class LetterWithNumberTest {
 
   private LetterWithNumber lwnt;
